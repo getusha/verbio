@@ -1,4 +1,5 @@
-import ListItem from './components/ListItem'
+import ListItem from './components/list/ListItem'
+import ListWrapper from './components/list/ListWrapper'
 
 function App() {
   return (
@@ -8,12 +9,12 @@ function App() {
           <h1 className="text-white font-display text-5xl">Text to speech</h1>
           <div className="w-100 bg-neutral-800 rounded-l-lg mb-5 p-4">
             <h4 className="text-2xl text-green-300">Commands</h4>
-            <ul className="list-disc ml-10 text-white text-2xl md:text-2xl">
+            <ListWrapper>
               <ListItem text='voice man' comment='change to man voice' />
               <ListItem text='voice woman' comment='change to woman voice' />
               <ListItem text='accent uk' comment='change to uk accent' />
               <ListItem text='accent us' comment='change to us accent' />
-            </ul>
+            </ListWrapper>
           </div>
         </div>
         <div className="flex-initial w-full md:w-3/5">
